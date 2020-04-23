@@ -1,0 +1,6 @@
+Flask
+pandas==0.24.2
+matplotlib
+numpy
+redis
+

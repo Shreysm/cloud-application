@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Lat & Long', 'Places Count',{ role: 'style' }],
+          ['Lesser than lat1 and lon1', {{row1}},'color:yellow'],
+          ['Between lat and lat2',  {{row2}},'color:black'],
+          ['Greater than lat2 and lon2',  {{row3}},'color:blue']
+                    
+    ]);
+        
+        var options = {
+          title: ' Pie chart showing count of places based on latitude and longitude range ',
+          is3D: true,
+
+
+        };
+       
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+  <center>
+    <h1> <i>Student ID:1001669806 </i> </h1> 
+     <h1> <strong> Mohan,Shreyas </strong> </h1>
+     <h2> <a href = "/">Home</a> </h2>
+    <!--<img src="static/Minnow.jpg">-->
+    <br> <br>
+    
+    <div id="piechart" style="width: 900px; height: 900px;"></div>
+  </body>
+</html>

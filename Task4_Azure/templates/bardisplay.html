@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Location', '<Mag Count','>=Mag Count'],
+          ['California', {{row1}},{{row2}}],
+          ['Hawaii',  {{row3}},{{row4}}]
+                    
+    ]);
+        
+        var options = {
+          title: ' Bar Chart showing number of earthquakes greater than or equal to input magnitude ',
+           hAxis: {
+          title: 'Total Population',
+          minValue: 0,
+        },
+        vAxis: {
+          title: 'City'
+        },
+        bars:'vertical'
+          
+
+
+        };
+       
+        var chart = new google.visualization.BarChart(document.getElementById('barchart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+  <center>
+    <h1> <i>Student ID:1001669806 </i> </h1> 
+     <h1> <strong> Mohan,Shreyas </strong> </h1>
+     <h2> <a href = "/">Home</a> </h2>
+    <!--<img src="static/Minnow.jpg">-->
+    <br> 
+    
+    <div id="barchart" style="width: 900px; height: 900px;"></div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+applications:
+- name: ShreyasCloud
+  random-route: true
+  memory: 64M

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<body>
+
+		<h1> Quiz 7 </h1> 
+		 <h1> <i>Student ID:1001669806 </i> </h1> 
+		 <h1> <strong> Mohan,Shreyas </strong> </h1>
+		<br> <br>
+		<br>
+		<h2> Enter the Course and Section number to be enrolled </h2>
+        <form action = "{{ url_for('values1') }}" method = "POST"> 
+		  
+		  <label>Course Number:</label>
+          <input type = "text"
+                 name = "course"
+                 />
+		  <br>
+		  <br>
+		  <label>Section Number:</label>
+          <input type = "text"                 
+				 name = "section"
+                  />
+          <br>
+          <br>
+		 
+				 
+		  <input type = "submit" value = "submit" /><br>	
+    </body>
+</html>
+        

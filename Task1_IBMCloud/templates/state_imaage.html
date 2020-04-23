@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+	<body>
+		
+		<header> <h1> Points Search </h1> </header>
+		<br> <br>
+		{% for i in range(2) %}
+		<h2>Name: {{name[i]}}  </h2> 
+                <h2>Picture:<img src="/static/{{ pic[i]}}" alt="NA">  </h2> 
+                <h2>Favorites: {{fav[i]}}  </h2>
+                {% endfor %}
+
+
+		<br>
+		<h2> <a href = "/">Back to Home</a> </h2>
+
+	</body>
+</html>

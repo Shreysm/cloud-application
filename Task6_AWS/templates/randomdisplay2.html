@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<body>
+
+		
+		 <h1> Quiz 3 </h1> 
+		 <h1> <i>Student ID:1001669806 </i> </h1> 
+		 <h1> <strong> Mohan,Shreyas </strong> </h1> 
+		<br> <br>
+		  		<h2> <a href = "/">Home</a> </h2>
+
+	        <h2>Total time taken to run queries is {{time}} seconds</h2>
+
+	        <br>
+	        <br>
+	            
+         		{% for row in rows %}
+
+         	    {% if row=='Cache'%}
+         		 
+       		<h2 style="color: red"> <b><i>{{row}}</b> </i></h2>
+       		    {%else%}
+       		    <h2 style="color: blue"> <b><i>{{row}}</b> </i></h2>
+       		    <br>
+
+				        <table>
+			         
+			         		{% for row in result %}
+			         	<tr>
+			         		{% for inner in row %}
+			       		 <td>{{inner}}</td>
+			         	</tr>
+			        		 {% endfor %}
+			        		 {% endfor %}
+			        		 
+			    	    </table>
+			       		    
+
+			         	     {% endif %}
+			        		 {% endfor %}
+			        		 
+			    	    
+       		  
+  		<h2> <a href = "/">Home</a> </h2>
+            
+
+      
+	</body>
+</html>

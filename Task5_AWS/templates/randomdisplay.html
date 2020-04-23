@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable(
+           {{result|safe}}
+              
+          );
+        
+        var options = {
+          title: 'Magnitude vs. Depth Error comparison',
+          hAxis: {title: 'Magnitude', minValue: 1, maxValue: 8},
+          vAxis: {title: 'Depth Error ', minValue: 0, maxValue: 4},
+          legend: 'none'
+
+        };
+       
+        var chart = new google.visualization.ScatterChart(document.getElementById('scatterc'));
+
+        chart.draw(data, options);
+
+        var data1 = google.visualization.arrayToDataTable([
+          ['Location', 'Total Count',{ role: 'style' },{ role: 'annotation' }],
+          ['California', {{row4}},'red',{{row4}}],
+          ['Hawaii',  {{row5}},'green',{{row5}}]
+                    
+    ]);
+        
+        var options1 = {
+          title: ' Bar Chart showing number of earthquakes greater than or equal to input magnitude ',
+           hAxis: {
+          title: 'Total Count',
+          minValue: 0,
+          
+        },
+        vAxis: {
+          title: 'City'
+        },
+        orientation:'vertical'
+          
+
+
+        };
+       
+        var chart1 = new google.visualization.BarChart(document.getElementById('barchart'));
+
+        chart1.draw(data1, options1);
+      }
+    </script>
+  </head>
+  <body>
+  	<style >
+  		span.a {
+  		display: inline-block;}
+  	</style>
+  <center>
+    <h1> <i>Student ID:1001669806 </i> </h1> 
+     <h1> <strong> Mohan,Shreyas </strong> </h1>
+     <h2> <a href = "/">Home</a> </h2>
+    
+    <br> 
+    <span class="a">
+    <div id="scatterc" style="width: 300px; height: 300px;">
+   
+	</div>
+	</span>
+	
+	<span class="a">
+	 <img src="static/jees.jpg" style="width:300px;height:300px;">
+	</span>
+    <hr>
+    <div id="barchart" style="width: 500px; height: 500px;"></div>
+  </body>
+</html>

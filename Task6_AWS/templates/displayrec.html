@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+   <body>
+   <header> <h1> Quiz 2 </h1> </header>
+		<h1> <i>Student ID:1001669806 </i> </h1> 
+     <h1> <strong> Mohan,Shreyas </strong> </h1>
+     <h1>Cloud Computing 6:00</h1><br>
+     <img src="/static/a.jpg" alt="NA">
+     
+   
+      
+      <h1>Population</h1>
+       
+      <table>
+         
+         {% for row in data %}
+         <tr>
+         <td><b><h1>{{row[0]}}</h1><b></td>
+        <td><b><h1>{{row[1]}}</h1><b></td>
+         </tr>
+         {% endfor %}
+      </table>
+      <br>
+      <br>
+
+    <h1> Start time: {{s}} s</h1>
+    <h1> End time: {{e}} s</h1>
+    <h1> Elapsed time: {{timetaken}} s</h1><br>
+      <br>
+      <h2> <a href = "/">Home</a> </h2>
+   </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<body>
+
+		<center>
+		<header> <h1> Enter 2 dates and depth</h1> </header>
+		<br> <br>
+		<br>
+        <form action = "{{ url_for('values1') }}" method = "POST"> 
+		  <label>Date 1:</label>
+          <input type = "text"                 
+				 name = "dat1"
+                  />
+          <br>
+          <br>
+		  <label>Date 2 :</label>
+          <input type = "text"
+                 name = "dat2"
+                 />
+		  <br>
+		  <br>
+		  <label>DEpth 1:</label>
+          <input type = "text"                 
+				 name = "dep1"
+                  />
+          <br>
+          <br>
+		  <label>DEpth 2:</label>
+          <input type = "text"
+                 name = "dep2"
+                 />
+		  <br>
+		  <br>
+				 
+		  <input type = "submit" value = "submit" /><br>	
+    </body>
+</html>
+        

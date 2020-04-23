@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+   <body>
+   <h1> <i>Student ID:1001669806 </i> </h1> 
+   <h1> <strong> Last Name: Mohan </strong> </h1> 
+   <h1> <strong> First Name: Shreyas </strong> </h1> 
+   <h2> <a href = "/">Home</a> </h2>
+   <center>
+       <!--
+       <h1> The Earthquake Records below the range {{mag1}}:</h1>
+       <h2> Count : {{count1}} </h2>
+   
+      <table >
+          
+         {% for row in row1 %}
+         <tr>
+              <td>{{row}}</td>
+         </tr>
+         {% endfor %}
+      </table>
+    -->
+
+    <!--  <h2>Total time taken to run queries is {{time}} seconds</h2>-->
+      <h1> Between 2 ranges list </h1>
+       {% for row in rows %}
+
+              {% if row=='Cache'%}
+             
+          <h2 style="color: red"> <b><i>{{row}}</b> </i></h2>
+              {%else%}
+              <h2 style="color: blue"> <b><i>{{row}}</b> </i></h2>
+              <br>
+
+                <table>
+               
+                  {% for row in result %}
+                <tr>
+                  {% for inner in row %}
+                 <td>{{inner}}</td>
+                </tr>
+                   {% endfor %}
+                   {% endfor %}
+                   
+                </table>
+                    
+
+                     {% endif %}
+                   {% endfor %}
+                   
+      <h1> Time Taken</h1>
+      <table>
+                  {% set count = 0 %}
+                  {% for row in timeall %}
+                <tr>
+                 
+                   
+                
+                  
+                 <td> <b>{{row}} </b></td>
+                 
+                 
+                </tr>
+                
+
+               
+                   {% endfor %}
+                   
+                </table>
+      <!--
+      <h1> The Earthquake Records above the range {{mag2}} </h1>
+      <h2> Count : {{count3}} </h2>
+      <table >
+          
+         {% for row in row3 %}
+         <tr>
+              <td>{{row}}</td>
+         </tr>
+         {% endfor %}
+      </table>
+      -->
+   
+
+
+      <br>
+      <h2> <a href = "/">Home</a> </h2>
+   </body>
+</html>

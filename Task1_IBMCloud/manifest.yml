@@ -1,0 +1,4 @@
+applications:
+- name: LittleApp
+  random-route: true
+  memory: 64M

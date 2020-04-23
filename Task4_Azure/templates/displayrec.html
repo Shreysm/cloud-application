@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+   <body>
+   <header> <h1> Quiz 2 </h1> </header>
+		<h1> <i>Student ID:1001669806 </i> </h1> 
+     <h1> <strong> Mohan,Shreyas </strong> </h1>
+    <h2> <a href = "/">Home</a> </h2>
+   <center>
+       <h1> Total Count: {{count}} </h1>
+       <h2> Min Earthquake of magnitude {{mag}} and place : {{place}}-<h2>
+        <br>
+        <h2>{{rows}}</h2>
+      <br><br>
+
+      Entire data
+      <table>
+         
+         {% for row in data %}
+         <tr>
+        <td>{{row}}</td>
+         </tr>
+         {% endfor %}
+      </table>
+
+      <br>
+      <h2> <a href = "/">Home</a> </h2>
+   </body>
+</html>

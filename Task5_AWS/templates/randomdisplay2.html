@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Location', 'Earthquake Count'],
+          ['{{loc1}}', {{row4}}],
+          ['{{loc2}}', {{row5}}],
+          ['{{loc3}}', {{row6}}],
+          ['{{loc4}}', {{row7}}]
+                    
+    ]);
+        
+        var options = {
+          title: ' Histogram showing count of earthquake based on location ',
+          colors: ['green']
+
+
+        };
+       
+        var chart = new google.visualization.Histogram(document.getElementById('hist'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+  <center>
+    <h1> <i>Student ID:1001669806 </i> </h1> 
+     <h1> <strong> Mohan,Shreyas </strong> </h1>
+     <h2> <a href = "/">Home</a> </h2>
+    <!--<img src="static/Minnow.jpg">-->
+    <br> <br>
+    
+    <div id="hist" style="width: 500px; height: 500px;"></div>
+  </body>
+</html>

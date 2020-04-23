@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+   <body>
+
+   <center>
+      <header> <h1>  Clusters of Earthquake </h1>
+      </header>
+      <br> <br>
+      <table>
+      <tr>
+		<th>Latitude</th>
+		<th>Longitude</th>
+      </tr>
+      {% for row in centroids %}
+      <tr>
+		<td> {{row[0]}}</td>
+        <td> {{row[1]}}</td>
+         </tr>
+         {% endfor %}
+		 <img src="{{url_for('static',filename='img.png')}}">
+      </table>
+
+      <br>
+      <h2> <a href = "/">Home</a> </h2>
+   </body>
+</html>

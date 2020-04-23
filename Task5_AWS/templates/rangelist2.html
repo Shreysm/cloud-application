@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+  <center>
+    <h1> <i>Student ID:1001669806 </i> </h1> 
+     <h1> <strong> Mohan,Shreyas </strong> </h1>
+     <h2> <a href = "/">Home</a> </h2>
+     <center>
+      <h1>There are {{ count2 }} points </h1>
+
+      <br>
+      <h1>There are {{ count1 }} Centroids in the clusters </h1>
+
+      <br>
+      <h1>Centroid positions in the clusters </h1>
+
+      {% for kmeans,num in zip %}
+        {{  kmeans  }}<br>
+        Label : {{ num }} <br>
+      {% endfor %}
+
+      <h1>Data points in the clusters </h1></center>
+      <center>
+      {% for k, v in counter.items() %}
+            Cluster{{k}}<br>
+            No. of points: {{v}}<br>
+      {% endfor %}
+      <br>
+      <h1>Distance between centroids in the clusters </h1></center>
+      <center>
+      <table border="1">
+      {% for k, v in distance.items() %}
+      <tr>
+            <td>{{k}}</td>
+            <td>{{v}}</td>
+          </tr>
+      {% endfor %}
+      </table>
+      <br>
+      <h1>Silhouette cluster analysis </h1>
+      <center>
+      {% for k, v in score_stats.items() %}
+            Cluster{{k}}<br>
+            {{v}}<br>
+      {% endfor %}
+      <br>
+      <img src ="static/clusterplot1.png" height = "600" width = "1000">
+      <br>
+      <!--<img src ="static/elbow.png" height = "600" width = "1000">-->
+      </center>
+  </body>
+</html>

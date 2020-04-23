@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<body>
+
+		<center>
+		<header> <h1> Date specific earthquakes </h1> </header>
+		<br> <br>
+		<br>
+        <form action = "{{ url_for('datespecific') }}" method = "POST"> 
+		  <label>Enter Date(YYYY-MM-DD):</label>
+          <input type = "text"                 
+				 name = "date1"
+                  />
+          <br>
+          <br>
+		  
+				 
+		  <input type = "submit" value = "submit" /><br>	
+    </body>
+</html>
+        

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+   <body>
+    <h1> <i>Student ID:1001669806 </i> </h1> 
+    <h1> <strong> Last Name: Mohan </strong> </h1> 
+    <h1> <strong> First Name: Shreyas </strong> </h1> 
+   <h2> <a href = "/">Home</a> </h2>
+   <center>
+      <header> <h1> This page lists the Earthquake records based on Latitude:{{lat}}, Longitude :{{lon}} and Distance :{{dis}}</h1>
+      </header>
+      <br> <br>
+      <table border = 1>
+         
+         {% for row in rows %}
+         <tr>
+        {{row}}
+		<br>
+         </tr>
+         {% endfor %}
+      </table>
+      <br>
+      <h2> <a href = "/">Home</a> </h2>
+   </body>
+</html>

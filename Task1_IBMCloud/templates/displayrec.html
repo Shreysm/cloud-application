@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+   <body>
+   <header> <h1> Quiz 1 </h1> </header>
+		<header> <h1> <i>Student ID:1001669806 </i> </h1> </header>
+		<header> <h1> <strong> Last Name: Mohan </strong> </h1> </header>
+		<header> <h1> <strong> First Name: Shreyas </strong> </h1> </header><br>
+   <center>
+      <header> <h1> This page lists the TA records </h1>
+      </header>
+      <table border = 1>
+         
+         {% for i in range(21) %}
+         <tr>
+             <td>{{names[i]}} </td>
+	     <td>{{points[i]}} </td>
+	     <td>{{states[i]}} </td>
+              <td>{{rooms[i]}} </td>
+	     <td>{{pictures[i]}}</td>
+	     <td>{{favorites[i]}}</td>
+		
+         </tr>
+        
+	<br>
+         {% endfor %}
+      </table>
+
+      <br>
+      <h2> <a href = "/">Home</a> </h2>
+   </body>
+</html>

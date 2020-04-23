@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<body>
+		 <h1> Quiz 2 </h1> 
+		 <h1> <i>Student ID:1001669806 </i> </h1> 
+		 <h1> <strong> Mohan,Shreyas </strong> </h1> 
+
+   		<h2> <a href = "/">Home</a> </h2>
+		<center>
+		<header> <h1> Locate near me </h1> </header>
+		<br> <br>
+		<h1> </h1>
+		<br>
+		<label><h2>Search  by Location:</h2></label><br>
+		<form action = "{{ url_for('distance') }}" method = "POST">
+			 <label>Enter the number of queries:</label>
+ 			 <input type="text" name="num">
+  			<br>
+			<label>Latitude:</label>
+         	 <input type = "text"
+                 name = "lat1" required="" 
+                />
+            <br><br> 
+		  <label>Longitude:</label>
+          <input type = "text"
+                 name = "lon1" required="" 
+                 />
+           <br><br> 
+		  <label>Distance:(KMs)</label>
+          <input type = "text"
+                 name = "kms" required="" />
+		  <br>
+		  <br>
+		  <br>
+				 
+	   <input type = "submit" value = "submit" /><br>
+	 </body>
+</html>		  	 
+				 
+		  

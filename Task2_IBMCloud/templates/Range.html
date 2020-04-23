@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<body>
+
+		<center>
+		<header> <h1> Earthquake Range </h1> </header>
+		<br> <br>
+		<br>
+        <form action = "{{ url_for('values') }}" method = "POST"> 
+		  <label>Start Range:</label>
+          <input type = "text"                 
+				 name = "mag1"
+                  />
+          <br>
+          <br>
+		  <label>End Range:</label>
+          <input type = "text"
+                 name = "mag2"
+                 />
+		  <br>
+		  <br>
+				 
+		  <input type = "submit" value = "submit" /><br>	
+    </body>
+</html>
+        

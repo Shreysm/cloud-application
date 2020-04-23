@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+   <body>
+   <header> <h1> Quiz 7 </h1> </header>
+    <h1> <i>Student ID:1001669806 </i> </h1> 
+     <h1> <strong> Mohan,Shreyas </strong> </h1>
+    <h2> <a href = "/">Home</a> </h2>
+   <center>
+       <h1> Total Count: {{count}} </h1>
+       
+       
+      <br><br>
+      <table border="1">
+         <th>Fall 2019</th>
+         {% for row in data %}
+         <tr>
+        <td>{{row}}</td>
+         </tr>
+         {% endfor %}
+      </table>
+
+      <h1> Total Count: {{count1}} </h1>
+       
+       
+      <br><br>
+      <table border="1">
+         <th>Students</th>
+         {% for row in data1 %}
+         <tr>
+        <td>{{row}}</td>
+         </tr>
+         {% endfor %}
+      </table>
+      
+      <h2> <a href = "/">Home</a> </h2>
+   </body>
+</html>

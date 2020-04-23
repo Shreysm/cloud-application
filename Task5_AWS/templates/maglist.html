@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+   <body>
+   <header> <h1> Quiz 5 </h1> </header>
+    <h1> <i>Student ID:1001669806 </i> </h1> 
+     <h1> <strong> Mohan,Shreyas </strong> </h1>
+    <h2> <a href = "/">Home</a> </h2>
+   <center>
+       <h1> Total Count for given fare range: {{count}} </h1>
+       
+       
+      <br><br>
+
+      <h1> First 5 tuples</h1>
+      <table>
+         
+         {% for row in rows %}
+         <tr>
+        <td>{{row}}</td>
+         </tr>
+         {% endfor %}
+      </table>
+      
+
+      <br>
+      <h2> <a href = "/">Home</a> </h2>
+   </body>
+</html>

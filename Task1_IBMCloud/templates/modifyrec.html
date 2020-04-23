@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modify Record</title>
+</head>
+<body>
+<header> <h1> <i>Student ID:1001669806 </i> </h1> </header>
+		<header> <h1> <strong> Last Name: Mohan </strong> </h1> </header>
+		<header> <h1> <strong> First Name: Shreyas </strong> </h1> </header>
+<form method="POST" action="{{ url_for('modifypoint') }}" enctype= "multipart/form-data">
+        <label><h2> Enter the points </h2></label>	
+        <input type="text" name="point"><br>
+        <label><h2> Enter the name to be modified</h2></label>	
+        <input type="text" name="name"><br>
+	<label><h2> Enter the favourite to be modified </h2></label>	
+        <input type="text" name="fav"><br><br>
+        <label><h2> Enter the points to be modified </h2></label>	
+        <input type="text" name="pointnew"><br><br>
+		<input type="submit">
+</form>
+
+</body>
+</html>

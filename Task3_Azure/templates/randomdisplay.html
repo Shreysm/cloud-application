@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<body>
+
+		
+		 <h1> Quiz 2 </h1> 
+		 <h1> <i>Student ID:1001669806 </i> </h1> 
+		 <h1> <strong> Mohan,Shreyas </strong> </h1> 
+		<br> <br>
+		<h2> <a href = "/">Home</a> </h2>
+	        <h2>Total time taken to run queries is {{time}} seconds</h2>
+
+	        <br>
+	        <br>
+	        <table>
+         
+         		{% for row in rows %}
+         	<tr>
+         		{% for inner in row %}
+       		 <td>{{inner}}</td>
+         	</tr>
+        		 {% endfor %}
+        		 {% endfor %}
+        		 
+    	    </table>
+
+	        <br><br>
+  		<h2> <a href = "/">Home</a> </h2>
+            
+
+      
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <header> <h1> <i>Student ID:1001669806 </i> </h1> </header>
+		<header> <h1> <strong> Last Name: Mohan </strong> </h1> </header>
+		<header> <h1> <strong> First Name: Shreyas </strong> </h1> </header>
+   <body>
+      <h2>Image File</h2>
+      <table border = 1>
+         <tr>
+	     <th>File </th>
+	     <th>Size </th>
+         </tr>
+         {% for i in range(6) %}
+         <tr>
+             <td>{{result[i]}} </td>
+	     <td>{{size[i]}} </td>
+		
+         </tr>
+        
+	<br>
+         {% endfor %}
+      </table>
+      <h2> <a href = "/">Home</a> </h2>
+   </body>
+</html>
